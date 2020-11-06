@@ -1,16 +1,28 @@
 .tweet-container{
     display: flex;
     flex-direction: column;   
-    width: 100%;
+    width: 90%;
     padding: 0em 1em;
     margin: 0 auto;
+    
+    
 }
+
 
 .row {
     display: flex;
     align-items: center;
 }
+.row1 {
+    display: flex;
+    width: 100%;
+    background-color:blanchedalmond;
+    margin-bottom: 5px;
 
+}
+.col{
+    width: calc(100%/3);
+}
 .c1 {
     flex-basis: 7%;
 }
@@ -35,4 +47,18 @@
     font-weight: bold;
     font-size: 1.3em;
     text-align: left;
+}
+.t-icon > svg{
+    color: rgb(20, 23, 26);
+    height: 30px;
+}
+
+.t-icon:hover {
+    background-color: #d8d8d8;
+    border-radius: 50%;
+    transition: .5s all;
+}
+
+.t-icon:hover > svg{
+    color: rgba(29,161,242,1.00);
 }

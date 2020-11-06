@@ -3,22 +3,16 @@ import Tweet from "./tweet/tweet";
 import {feed} from '../source';
 
 class Feed extends React.Component {
-    constructor() {
+    constructor(props) {
         super();
         this.state = {
-            tweets: feed
+            tweets: feed,
+            
         }
     }
 
     render() {
 
-        const {profile, profileName, username, content, display} = {
-            profile: "",
-            profileName: "",
-            username: "",
-            content: "",
-            display: ""
-        };
 
         return (
             <div>
@@ -26,10 +20,15 @@ class Feed extends React.Component {
                     this.state.tweets.map( tweet => {
                         return (
                             <Tweet
+                                profileImg={tweet.profileImg}
                                 profile={tweet.profile}
-                                profileUrl={profileName}
                                 username={tweet.username}
-                                content={tweet.content}/>
+                                content={tweet.content}
+                                date={tweet.date}
+                                comments={tweet.interaction.comments}
+                                retweets={tweet.interaction.retweets}
+                                likes={tweet.interaction.likes}
+                                />
                         )
                     })
                 }

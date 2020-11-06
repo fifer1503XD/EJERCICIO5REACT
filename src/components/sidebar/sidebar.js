@@ -25,6 +25,7 @@ const Sidebar = (props) => {
                     })
                 }
             </div>
+            
             <Account profileUrl={props.profileUrl}/>
         </div>
     )
