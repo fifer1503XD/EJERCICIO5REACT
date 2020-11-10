@@ -3,7 +3,7 @@ import Tweet from "./tweet/tweet";
 import {feed} from '../source';
 
 class Feed extends React.Component {
-    constructor(props) {
+    constructor() {
         super();
         this.state = {
             tweets: feed,

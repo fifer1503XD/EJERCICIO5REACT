@@ -4,8 +4,6 @@
     width: 90%;
     padding: 0em 1em;
     margin: 0 auto;
-    
-    
 }
 
 
@@ -16,7 +14,7 @@
 .row1 {
     display: flex;
     width: 100%;
-    background-color:blanchedalmond;
+    background-color:#F2F6F6;
     margin-bottom: 5px;
 
 }
